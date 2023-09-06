@@ -60,7 +60,7 @@ func ResetMockStorage() {
 	singleton = nil
 }
 
-// NewMockStorage creates a new MockStorage.
+// NewMockStorage creates a new mocked chunk client for testing
 func NewMockStorage() *MockStorage {
 	if singleton == nil {
 		singleton = &MockStorage{
